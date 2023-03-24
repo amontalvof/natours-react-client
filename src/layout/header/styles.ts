@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import hero from '../../../assets/hero.jpg';
 import {
     DARK_GREEN_RGBA,
@@ -41,11 +41,28 @@ export const HeadingPrimary = styled.h1`
     color: ${WHITE};
     text-transform: uppercase;
 `;
+
+const moveInLeft = keyframes`
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    80%{
+        transform: translateX(10px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+`;
+
 export const HeadingPrimaryMain = styled.span`
     display: block;
     font-size: 60px;
     font-weight: 400;
     letter-spacing: 35px;
+    animation-name: ${moveInLeft};
+    animation-duration: 1s;
 `;
 
 export const HeadingPrimarySub = styled.span`
