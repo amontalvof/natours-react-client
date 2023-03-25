@@ -40,6 +40,7 @@ export const TextBox = styled.div`
 export const HeadingPrimary = styled.h1`
     color: ${WHITE};
     text-transform: uppercase;
+    backface-visibility: hidden; //! this is for removing a little shaking in the tile after the animation
 `;
 
 const moveInLeft = keyframes`
@@ -55,6 +56,19 @@ const moveInLeft = keyframes`
         transform: translateX(0);
     }
 `;
+const moveInRight = keyframes`
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    80%{
+        transform: translateX(-10px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+`;
 
 export const HeadingPrimaryMain = styled.span`
     display: block;
@@ -63,6 +77,9 @@ export const HeadingPrimaryMain = styled.span`
     letter-spacing: 35px;
     animation-name: ${moveInLeft};
     animation-duration: 1s;
+    animation-timing-function: ease-out;
+    /* animation-delay: 3s;
+    animation-iteration-count: 3; */
 `;
 
 export const HeadingPrimarySub = styled.span`
@@ -70,4 +87,5 @@ export const HeadingPrimarySub = styled.span`
     font-size: 20px;
     font-weight: 700;
     letter-spacing: 17.4px;
+    animation: ${moveInRight} 1s ease-out;
 `;
