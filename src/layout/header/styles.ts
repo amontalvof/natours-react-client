@@ -32,6 +32,7 @@ export const Logo = styled.img`
 
 export const TextBox = styled.div`
     position: absolute;
+    text-align: center;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -39,6 +40,7 @@ export const TextBox = styled.div`
 
 export const HeadingPrimary = styled.h1`
     color: ${WHITE};
+    margin-bottom: 60px;
     text-transform: uppercase;
     backface-visibility: hidden; //! this is for removing a little shaking in the tile after the animation
 `;
