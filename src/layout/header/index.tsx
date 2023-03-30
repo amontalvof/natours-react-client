@@ -30,6 +30,7 @@ const Header = (props: HeaderProps) => {
                     text="Discover our tours"
                     txColor={GRAY}
                     bgColor={WHITE}
+                    animated
                 />
             </TextBox>
         </HeaderContainer>

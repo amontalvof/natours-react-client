@@ -5,6 +5,7 @@ interface NavigationButtonProps {
     bgColor: string;
     href: string;
     text: string;
+    animated?: boolean;
 }
 
 const NavigationButton = ({
@@ -12,9 +13,15 @@ const NavigationButton = ({
     txColor,
     bgColor,
     text,
+    animated = false,
 }: NavigationButtonProps) => {
     return (
-        <Anchor href={href} txColor={txColor} bgColor={bgColor}>
+        <Anchor
+            href={href}
+            txColor={txColor}
+            bgColor={bgColor}
+            animated={animated}
+        >
             {text}
         </Anchor>
     );
