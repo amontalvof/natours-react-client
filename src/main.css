@@ -16,3 +16,7 @@ body {
     color: var(--main-color-gray);
     padding: 30px;
 }
+
+.u-center-text {
+    text-align: center;
+}
