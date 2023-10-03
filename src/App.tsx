@@ -4,7 +4,7 @@ import About from "./views/about";
 const App = () => {
     return (
         <>
-            <Header>lorem</Header>
+            <Header/>
             <main>
                 <About />
             </main>

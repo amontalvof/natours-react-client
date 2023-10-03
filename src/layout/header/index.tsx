@@ -1,4 +1,3 @@
-import { IChildren } from '../../types/children';
 import LogoWhite from '../../../assets/logo-white.png';
 import {
     HeaderContainer,
@@ -12,9 +11,7 @@ import {
 import NavigationButton from '../../components/navigationButton';
 import { WHITE, GRAY } from '../../constants/colors';
 
-interface HeaderProps extends IChildren {}
-
-const Header = (props: HeaderProps) => {
+const Header = () => {
     return (
         <HeaderContainer>
             <LogoBox>
