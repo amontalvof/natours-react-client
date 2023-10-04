@@ -1,12 +1,12 @@
 import styled, { css } from "styled-components";
 
-const gridWidth = "114rem";
+const gridWidth = "100rem";
 const gutterVertical = "3rem";
 const gutterHorizontal = "6rem";
 
 export const Row = styled.div`
     max-width: ${gridWidth};
-    background-color: #eee;
+    /* background-color: #eee; */
     margin: 0 auto;
     
     &::after { //! clearfix
@@ -22,7 +22,7 @@ export const Row = styled.div`
 
 const CommonStyles = css`
     float: left;
-    background-color: crimson;
+    /* background-color: crimson; */
 
     &:not(:last-child){
         margin-right: ${gutterHorizontal};
